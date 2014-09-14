@@ -8,6 +8,7 @@ import re
 
 # Create a virtual electric utility device in Domoticz note the IDX val
 # Change the idx= value in the URL string below on line 26 and the server IP/port
+# run this script in crontab as requently as you wish, recommend 30s
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.SOL_UDP)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
